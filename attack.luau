@@ -55,7 +55,3 @@ local function Attack()
         coroutine.resume(registerHit, hitData[1][2], { table.unpack(hitData, 2) })
     end
 end
-
-while wait() do
-    Attack()
-end
