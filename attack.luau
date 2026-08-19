@@ -110,3 +110,8 @@ local function AttackPlayers()
         coroutine.resume(registerHit, hitData[1][2], { table.unpack(hitData, 2) })
     end
 end
+
+return {
+    Attack = Attack,
+    AttackPlayers = AttackPlayers
+}
